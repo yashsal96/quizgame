@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Quiz Game By Yash Sallam</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+</head>
+<body>
+    <div class="start_btn"><button>Start Quiz</button></div>
+    <div class="info_box">
+        <div class="info_title">
+            <span>Some rules of the quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will only have 15 seconds for each question.</div>
+            <div class="info">2. Once answer is selected, you cannot undo it.</div>
+            <div class="info">3. You cannot exit from quiz while playing.</div>
+            <div class="info">4. You cannot select any answer once time is out.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text"><!--Here Questions--></div>
+            <div class="option_list"><!--Answers--></div>
+        </section>
+        <footer>
+            <div class="total_que"><!--question count number--></div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've Completed the Quiz!</div>
+        <div class="score_text"><!--score result--></div>
+        <div class="buttons">
+            <button class="restart">Replay?</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>    
+</html>
